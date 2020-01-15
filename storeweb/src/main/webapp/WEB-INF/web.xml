@@ -24,6 +24,24 @@
   	<description></description>
   	<servlet-class>com.rohant.store.servlet.DisplayStoreDetailServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>ViewStoreServlet</servlet-name>
+  	<display-name>ViewStoreServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.rohant.store.servlet.ViewStoreServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteStoreServlet</servlet-name>
+  	<display-name>DeleteStoreServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.rohant.store.servlet.DeleteStoreServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UpdateStoreServlet</servlet-name>
+  	<display-name>UpdateStoreServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.rohant.store.servlet.UpdateStoreServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>CreateStoreServlet</servlet-name>
   	<url-pattern>/CreateStoreServlet</url-pattern>
@@ -31,5 +49,17 @@
   <servlet-mapping>
   	<servlet-name>DisplayStoreDetailServlet</servlet-name>
   	<url-pattern>/DisplayStoreDetailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ViewStoreServlet</servlet-name>
+  	<url-pattern>/ViewStoreServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteStoreServlet</servlet-name>
+  	<url-pattern>/DeleteStoreServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateStoreServlet</servlet-name>
+  	<url-pattern>/UpdateStoreServlet</url-pattern>
   </servlet-mapping>
 </web-app>

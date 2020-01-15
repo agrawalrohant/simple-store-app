@@ -1,5 +1,8 @@
 package com.rohant.store.dao;
 
+
+import java.util.List;
+
 import com.rohant.store.dto.Store;
 
 public interface StoreDAO {
@@ -11,5 +14,7 @@ public interface StoreDAO {
 	void updateStore(Store store);
 	
 	void deleteStore(int id);
+	
+	List<Store> getAllStores();
 
 }

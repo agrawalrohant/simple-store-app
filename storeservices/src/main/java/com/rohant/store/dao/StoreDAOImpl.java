@@ -1,6 +1,9 @@
 package com.rohant.store.dao;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import com.rohant.store.dto.Store;
@@ -27,6 +30,11 @@ public class StoreDAOImpl implements StoreDAO {
 	@Override
 	public void deleteStore(int id) {
 		storeMap.remove(id);
+	}
+
+	@Override
+	public List<Store> getAllStores() {
+		return new ArrayList<>(storeMap.values());
 	}
 
 }

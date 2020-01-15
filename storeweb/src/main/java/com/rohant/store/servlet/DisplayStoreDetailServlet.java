@@ -35,7 +35,7 @@ public class DisplayStoreDetailServlet extends HttpServlet {
 		out.print("Store Details : ");
 		out.print("Store ID : " + store.getId());
 		out.print("Store Name : " + store.getName());
-		out.print("Store Description : " + store.getDescription());
+		out.print("Store Address : " + store.getDescription());
 	}
 
 }
