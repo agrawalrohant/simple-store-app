@@ -3,8 +3,14 @@ pipeline{
 	stages {
 		stage ('Build'){
 			steps {
-				echo "Running test and sonar"
-				bat 'mvn clean test sonar:sonar'
+				echo "Running test"
+				bat 'mvn clean test'
+			}
+		}
+		stage ('Sonar'){
+			steps {
+				echo "Running Sonar"
+				bat 'mvn sonar:sonar'
 			}
 		}
 	}
